@@ -1,0 +1,20 @@
+.heading{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 2px 2px var(--darkpurple);
+}
+.first-letter{
+    color: var(--textcolor);
+}
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+.subheading{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 2px 2px var(--darkpurple);
+}
