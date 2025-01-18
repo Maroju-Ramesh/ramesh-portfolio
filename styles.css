@@ -11,7 +11,7 @@ body {
 }
 :root {
   --maincolor: rgb(20, 23, 31);
-  --navbar: rgb(182, 132, 182);
+  --navbar: rgb(172, 53, 172);
   --darkpurple: rgb(63, 27, 63);
   --textcolor: rgb(141, 53, 134);
 }
@@ -40,7 +40,7 @@ header h2 {
 .nav-right ul li {
   list-style: none;
   font-size: 23px;
-  text-shadow: 1px 1px 2px;
+  text-shadow: 1px 1px 2px rgb(117, 34, 110);
 
   font-family: "Poppins", sans-serif;
   color: var(--darkpurple);
@@ -51,8 +51,8 @@ header h2 {
   text-decoration: none;
 }
 .nav-right ul li:hover {
-  color: var(--darkpurple);
-  text-shadow: 1px 1px 5px purple;
+  color: white;
+  text-shadow: 1px 1px 1px white;
   transform: scale(1.1);
 }
 .nav-right ul {
@@ -141,6 +141,7 @@ main {
   margin-top: 15px;
   color: white;
   text-wrap: wrap;
+  
 }
 
 .home-icons a {
@@ -321,7 +322,7 @@ section {
   border-radius: 10px;
   width: 100%;
   height: 5px;
-  background-color: #000000;
+  background-color: #f1f1f1;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
@@ -424,7 +425,7 @@ section {
 }
 .radial-bars .radial-bar .progress-bar {
   stroke-width: 10;
-  stop-color: black;
+  stop-color: rgb(0, 0, 0);
   fill: transparent;
   stroke-dashoffset: 502;
   stroke-dasharray: 502;
@@ -492,7 +493,7 @@ section {
   width: 100%;
   position: absolute;
   text-align: center;
-  left: 50%;
+  left: 30%;
   bottom: -5px;
   transform: translate(-50px);
   font-size: 17px;
@@ -585,6 +586,9 @@ section {
 .contactme h5 i {
   color: purple;
 }
+.contactme .p1{
+text-align: justify;
+}
 
 form {
   width: 500px;
@@ -624,22 +628,26 @@ form button:hover {
     0 0 15px var(--textcolor), 0 0 20px var(--textcolor);
   cursor: pointer;
 }
-#moveup {
+
+.moveup a {
+  color: var(--textcolor);
   background-color: transparent;
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  padding: 7px;
+  border-radius: 50%;
   border: 2px solid var(--textcolor);
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 5px var(--textcolor);
+  
 }
-#moveup i {
-  color: var(--textcolor);
-}
-#moveup:hover {
+.moveup a:hover {
   cursor: pointer;
+  box-shadow: 0 0 10px var(--textcolor);
+  background-color: var(--textcolor);
+  color: var(--maincolor);
+  color: #000;
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -683,7 +691,7 @@ form button:hover {
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
 
@@ -706,11 +714,11 @@ form button:hover {
     font-size: 35px;
   }
   main {
-    margin-top: 90px;
+    margin-top: 100px;
     row-gap: 250px;
   }
   .aboutme {
-    margin-top: 350px;
+    margin-top: 150px;
   }
   .abtme .heading {
     font-size: 45px;
@@ -719,11 +727,14 @@ form button:hover {
 
 @media screen and (max-width: 530px) {
   main {
-    row-gap: 100%;
-    margin-top: 180px;
+    row-gap: 50%;
+    margin-top: 100px;
   }
   .project img {
     width: 280px;
+  }
+  .aboutme{
+    margin-top: 200px;
   }
 }
 
@@ -794,11 +805,12 @@ form button:hover {
   }
   main {
     margin-top: 70px;
-    row-gap: 180px;
+    row-gap: 70px;
   }
   .abtme {
     width: 90%;
   }
+  
 }
 
 @media screen and (max-width: 410px) {
@@ -806,11 +818,16 @@ form button:hover {
     padding: 75px 20px;
   }
   main {
-    row-gap: 250px;
+    row-gap: 150px;
   }
 
   .wrapper .text {
     font-size: 25px;
   }
+  .aboutme{
+    margin-top: 250px;
+  }
   
 }
+
+
