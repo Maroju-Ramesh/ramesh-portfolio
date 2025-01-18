@@ -720,7 +720,7 @@ form button:hover {
 @media screen and (max-width: 530px) {
   main {
     row-gap: 100%;
-    margin-top: 120px;
+    margin-top: 180px;
   }
   .project img {
     width: 280px;
